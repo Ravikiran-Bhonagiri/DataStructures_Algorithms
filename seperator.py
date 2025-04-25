@@ -25,14 +25,16 @@ def generate_category_content(problems, difficulty):
         str: The Markdown content for the category.
     """
     content = ""
-    for problem_name, full_path in problems:
+    for i, (problem_name, full_path) in enumerate(problems, 1):
         # Create relative path
         parts = full_path.split(os.sep)
         # Construct the relative path.
-        relative_path = os.path.join(*parts[1:])
+        relative_path = os.path.join(*parts[0:1],os.path.basename(os.path.dirname(os.path.join(*parts[0:3]))),*parts[1:])
         link = generate_markdown_link(problem_name, relative_path)
-        content += f"{link}\n"
+        content += f"{i}. {link}\n"  # Add newline character here
     return content
+
+
 
 def generate_difficulty_readme(base_dir):
     """
