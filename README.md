@@ -1,4 +1,4 @@
-# Data Structures and Algorithms Practice
+# Data Structures and Algorithms Problem Practice
 
 This section provides a direct list of all the **Easy** problems organized by category.
 
