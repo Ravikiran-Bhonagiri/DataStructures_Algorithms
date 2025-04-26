@@ -12,7 +12,7 @@ Okay, let's tackle the "Valid Anagram" problem. I understand you feel overwhelme
 
 **2. Conceptual Foundation:**
 
-*   **Anagrams:** An anagram of a string is simply a rearrangement of its letters. For example, "listen" and "silent" are anagrams. "rat" and "cat" are anagrams. "aa" and "a" are *not* anagrams.
+*   **Anagrams:** An anagram of a string is simply a rearrangement of its letters. For example, "listen" and "silent" are anagrams. "rat" and "cat" are not anagrams. "aa" and "a" are *not* anagrams.
 *   **Frequency Counting:** Imagine you have a bag of marbles of different colors. Frequency counting involves counting how many marbles of each color you have. In our case, the "colors" are characters, and we want to count how many times each character appears in each string.
 *   **Hash Tables (Dictionaries):** A hash table (or dictionary in Python) is like a real-world dictionary. You look up a "key" (like a word), and it gives you a "value" (like the definition). In our case, we can use characters as keys and their frequencies as values. For example, if the string is "aab", the dictionary would store: `{'a': 2, 'b': 1}`. This makes it very fast to check the count of a specific letter.
 
